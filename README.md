@@ -71,7 +71,13 @@ Therefore, exponent and scaling factor the same as that found in the paper.
   </p>
 
 
-
+ggplot(data = virion_data, aes(x=log_bases, y=log_volume)) + 
+  geom_point() +
+  xlab("log [Genome length (kb)]") + 
+  ylab("log [Virion volume (nm3)]") +
+  geom_smooth(method = 'lm') +
+  theme_minimal() +
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1))
 
 
 
@@ -83,7 +89,12 @@ Therefore, exponent and scaling factor the same as that found in the paper.
 
 
 
-
+V = aL^B
+From work above, a = 1182, B = 1.52
+Therefore, when L = 300:
+   V = (1182) x (300)^1.52
+   = 6880000nm3
+   
 
 
 
