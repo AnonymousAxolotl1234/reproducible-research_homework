@@ -28,6 +28,7 @@ Both plots then use the reproducible_seed variable, making it reproducible throu
 
 
 d) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/d94a3869-498d-48c3-a613-660ca2917e74">
 
 
 
