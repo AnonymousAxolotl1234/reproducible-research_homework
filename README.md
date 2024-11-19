@@ -47,7 +47,7 @@ In this case, ln(V) = ln(a) + Bln(L)
 
 
 virion_data$log_volume <- log(virion_data$Virion.volume..nm.nm.nm.)
-virion_data$Bases <- (virion_data$Genome.length..kb.) * 1000
+
 
 
 
