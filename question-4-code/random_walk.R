@@ -28,9 +28,12 @@ random_walk  <- function (n_steps) {
   
 }
 
-data1 <- random_walk(500)
+#reproducible_seed <- random_walk(500)
 
-plot1 <- ggplot(aes(x = x, y = y), data = data1) +
+
+#data1 <- random_walk(500)
+
+plot1 <- ggplot(aes(x = x, y = y), data = reproducible_seed) +
   
   geom_path(aes(colour = time)) +
   
@@ -40,9 +43,9 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   ylab("y-coordinate")
 
-data2 <- random_walk(500)
+#data2 <- random_walk(500)
 
-plot2 <- ggplot(aes(x = x, y = y), data = data2) +
+plot2 <- ggplot(aes(x = x, y = y), data = reproducible_seed) +
   
   geom_path(aes(colour = time)) +
   
@@ -53,3 +56,4 @@ plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   ylab("y-coordinate")
 
 grid.arrange(plot1, plot2, ncol=2)
+
