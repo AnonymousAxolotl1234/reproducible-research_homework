@@ -8,7 +8,7 @@ a) A script for simulating a random_walk is provided in the question-4-code fold
 
 <img width="552" alt="image" src="https://github.com/user-attachments/assets/452693e2-76e9-4724-87b6-daef39dc7016">
 
-Despite the two plots having identical codes, plots are different.
+Despite the two plots having identical codes, plots are different due to the random seed being generated.
 
 
 b) Investigate the term random seeds. What is a random seed and how does it work? (5 points)
@@ -22,8 +22,9 @@ b) Investigate the term random seeds. What is a random seed and how does it work
 
 c) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)
 
+Used random_walk() function to generate a random seed, which is stored as the reproducible_seed variable.
 
-
+Both plots then use the reproducible_seed variable, making it reproducible throughout the script.
 
 
 d) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
