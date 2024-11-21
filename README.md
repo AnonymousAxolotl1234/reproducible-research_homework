@@ -13,22 +13,19 @@ Despite the two plots having identical codes, plots are different due to the ran
 
 b) Investigate the term random seeds. What is a random seed and how does it work? (5 points)
 
-
-
-
-
+Random number generation in R is based on a pseudo-random number generator (PRNG) - meaning the numbers generated are not truly random. Instead, they follow a predictable pattern determined by a seed. Therefore, using a seed allows one to reproduce the same sequence of random numbers which can be useful for replicating results.
 
 
 
 c) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)
 
-Used random_walk() function to generate a random seed, which is stored as the reproducible_seed variable.
-
-Both plots then use the reproducible_seed variable, making it reproducible throughout the script.
+Used the set.seed() function to generate reproducible pseudorandom numbers which is reproducible.
 
 
 d) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
-<img width="920" alt="image" src="https://github.com/user-attachments/assets/d94a3869-498d-48c3-a613-660ca2917e74">
+
+<img width="1438" alt="image" src="https://github.com/user-attachments/assets/e242b217-98d8-4a21-af9b-af3553187394">
+
 
 
 
