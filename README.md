@@ -8,7 +8,10 @@ a) A script for simulating a random_walk is provided in the question-4-code fold
 
 <img width="552" alt="image" src="https://github.com/user-attachments/assets/452693e2-76e9-4724-87b6-daef39dc7016">
 
-Despite the two plots having identical codes, plots are different due to the random seed being generated.
+The two plots show different paths being taken. Due to the pseudo-random generated numbers in the runif() functions which is executed independently in both plots, leading to different outcomes.
+No seed is set, so 
+
+
 
 
 b) Investigate the term random seeds. What is a random seed and how does it work? (5 points)
