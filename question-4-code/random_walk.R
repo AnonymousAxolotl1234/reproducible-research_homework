@@ -4,8 +4,10 @@
 library(ggplot2)
 library(gridExtra)
 
+
+
 random_walk  <- function (n_steps) {
-  
+  set.seed(123) 
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
   
   df[1,] <- c(0,0,1)
@@ -28,12 +30,12 @@ random_walk  <- function (n_steps) {
   
 }
 
-#reproducible_seed <- random_walk(500)
 
 
-#data1 <- random_walk(500)
 
-plot1 <- ggplot(aes(x = x, y = y), data = reproducible_seed) +
+data1 <- random_walk(500)
+
+plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   geom_path(aes(colour = time)) +
   
@@ -43,9 +45,9 @@ plot1 <- ggplot(aes(x = x, y = y), data = reproducible_seed) +
   
   ylab("y-coordinate")
 
-#data2 <- random_walk(500)
+data2 <- random_walk(500)
 
-plot2 <- ggplot(aes(x = x, y = y), data = reproducible_seed) +
+plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   
   geom_path(aes(colour = time)) +
   
