@@ -1,4 +1,7 @@
 # Reproducible research: version control and R
+ANSWERS FOR QUESTIONS ONE TO THREE:
+https://github.com/AnonymousAxolotl1234/logistic_growth/blob/main/README.md
+
 
 ## QUESTION 4
 a) Two side-by-side plots (produced from data1 and data2) are produced after execution of the code. Despite both codes using the same function and inputs, the outputs (path of 500 steps) are different. (Explained later). Time is illustrated using a gradient colour scheme, from darker blue to lighter blue, and this allows us to visualise how the random walks change over time (with earlier steps in darker blue and later steps in lighter blue). Colour is used to represent time (with more recent steps having a lighter blue colour - allowing us to determine how the path was taken over time). The graph illustrates two independent iterations of the function random_walk. Each step has a set distance (set to 0.25 units), but a random angle is created after each step (between 0 and 2pi) to generate a random path. This process is repeated for a set number of steps (set to 500). Thus, since the path relies on random number generation - each iteration of the function produces a different output, leading to the graph being different each time. This is a large issue during the process of data analysis as this function currently lacks reproducibility and therefore validity.
