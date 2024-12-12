@@ -5,12 +5,15 @@ virion_data <- read.csv("question-5-data/Cui_etal2014.csv")
 ncol(virion_data)
 nrow(virion_data)
 
+
+#CLEANING AND TRANSFORMING DATA
 virion_data$log_volume <- log(virion_data$Virion.volume..nm.nm.nm.)
-virion_data$bases <- (virion_data$Genome.length..kb.) * 1
+virion_data$bases <- (virion_data$Genome.length..kb.)
 virion_data$log_bases <- log(virion_data$bases)
 
-model1 <- lm(log_volume ~ log_bases, data = virion_data)
-summary(model1)
+#APPLYING LINEAR MODEL
+model <- lm(log_volume ~ log_bases, data = virion_data)
+summary(model)
 
 
 ggplot(data = virion_data, aes(x=log_bases, y=log_volume)) + 
